@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20 lg:py-32">
+      <section className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-32 pb-20 lg:pt-40 lg:pb-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative z-10">
                 <Image
-                  src="/next.svg"
+                  src="/bkg-hraleee.jpg"
                   alt="Digital Solutions"
                   width={500}
                   height={400}
@@ -84,7 +84,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Siti web responsive, veloci e ottimizzati per la conversione
               </p>
-              <Link href="/servizi/siti-web" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link href="/portfolio" className="text-blue-600 hover:text-blue-700 font-medium">
                 Scopri di più →
               </Link>
             </div>
@@ -100,7 +100,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Piattaforme di vendita online complete e personalizzate
               </p>
-              <Link href="/servizi/e-commerce" className="text-purple-600 hover:text-purple-700 font-medium">
+              <Link href="/portfolio" className="text-purple-600 hover:text-purple-700 font-medium">
                 Scopri di più →
               </Link>
             </div>
@@ -116,7 +116,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Applicazioni native e cross-platform per iOS e Android
               </p>
-              <Link href="/servizi/app-mobile" className="text-green-600 hover:text-green-700 font-medium">
+              <Link href="/portfolio" className="text-green-600 hover:text-green-700 font-medium">
                 Scopri di più →
               </Link>
             </div>

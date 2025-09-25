@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CookieBanner from "./components/CookieBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,13 +16,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hraleee Tech - Soluzioni Digitali Innovative",
+  title: "Hratech - Soluzioni Digitali Innovative",
   description: "Creiamo soluzioni digitali innovative per far crescere la tua azienda. Siti web, applicazioni e strategie digitali su misura.",
   keywords: "siti web, e-commerce, app mobile, consulenza digitale, SEO, marketing digitale, sviluppo web",
-  authors: [{ name: "Hraleee Tech" }],
-  creator: "Hraleee Tech",
+  authors: [{ name: "Hratech" }],
+  creator: "Hratech",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png" }
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
+  },
   openGraph: {
-    title: "Hraleee Tech - Soluzioni Digitali Innovative",
+    title: "Hratech - Soluzioni Digitali Innovative",
     description: "Creiamo soluzioni digitali innovative per far crescere la tua azienda",
     type: "website",
     locale: "it_IT",
@@ -43,6 +52,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );
